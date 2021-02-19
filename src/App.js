@@ -5,7 +5,13 @@ import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-          
+          <BrowserRouter>
+            <Switch>
+              <Route path="/results" component={Results}/>
+              <Route path="/details/:id" component={Details}/>
+              <Redirect from="/" to="/results" />
+            </Switch>
+          </BrowserRouter>
     </div>
   );
 }
