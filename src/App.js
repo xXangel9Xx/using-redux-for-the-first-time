@@ -4,10 +4,12 @@ import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom'
 import Results from './pages/pageResults/results'
 import Details from './pages/pageDetails/details'
 import store from './redux/store';/*aqui se llama al store de redux */
+import AppBar from './components/appBar/index';
 
 function App() {
   return (
     <div className="App">
+      <AppBar />
         <Provider store={store}>
           <BrowserRouter>
             <Switch>
