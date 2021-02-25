@@ -15,6 +15,7 @@
         padding-right: 5vw;
     }
     .image{
+        border-radius: 8px;
         height: 16px;
     }
 }
