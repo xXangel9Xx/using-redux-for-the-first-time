@@ -1,0 +1,20 @@
+@media screen and (min-width:300px){
+    .container-autocomplete{
+        background-color: white;
+        height: max-content;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .form{
+        display: flex;
+    }
+    .button, .image-search{height: 18px;}
+    .search-input{
+        color: white;
+        opacity: 0.4;
+        background-color: black;
+    }
+    ::placeholder{
+        color: white;
+    }
+}

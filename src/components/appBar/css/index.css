@@ -9,7 +9,10 @@
     .container-bar .information{
         color: white;
         display: flex;
-        width: max-content;
+        width: 100vw;
+        justify-content: space-between;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
     .image{
         height: 16px;
