@@ -7,19 +7,22 @@ import findResults from '../../redux/actions/findResults'
 import { connect } from 'react-redux';
 //import { withRouter } from 'react-router-dom';
 const AppBar = (props) =>{
-    useEffect(()=>{
+    /*useEffect(()=>{
         props.findSuggestions('React')
         console.log(props.suggestions)
     },[])
     useEffect(()=>{
         console.log(props.suggestions)
     },[props.suggestions])
-
+    */
     return (
         <div className="container-bar">
             <div className="information">
                 <p className="text">xXangelXx</p>
-                <Autocomplete />
+                <Autocomplete
+                    findSuggestions={props.findSuggestions}
+                    suggestions={props.suggestions}
+                />
                 <img src={UserImage} alt="" className="image"/>
             </div>
         </div>
@@ -33,7 +36,7 @@ const mapStateToProps = ( state ) =>{
 }
 const mapDispatchToProps = { 
     findSuggestions,
-    findResults
+   // findResults
 }
 export default connect(mapStateToProps,mapDispatchToProps)(AppBar)
 //withRouter(connect(mapStateToProps)(AppBar)); withRouter es un componente de orden 
