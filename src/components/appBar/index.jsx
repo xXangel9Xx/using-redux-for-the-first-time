@@ -3,18 +3,12 @@ import './css/index.css'
 import Autocomplete from '../autocomplete/index'
 import UserImage from '../../assets/user.jpeg'
 import findSuggestions from '../../redux/actions/findSuggestions'
+import findCurrentItem from '../../redux/actions/findCurrentItem'
 import findResults from '../../redux/actions/findResults'
 import { connect } from 'react-redux';
 //import { withRouter } from 'react-router-dom';
+
 const AppBar = (props) =>{
-    /*useEffect(()=>{
-        props.findSuggestions('React')
-        console.log(props.suggestions)
-    },[])
-    useEffect(()=>{
-        console.log(props.suggestions)
-    },[props.suggestions])
-    */
     return (
         <div className="container-bar">
             <div className="information">
@@ -22,6 +16,10 @@ const AppBar = (props) =>{
                 <Autocomplete
                     findSuggestions={props.findSuggestions}
                     suggestions={props.suggestions}
+                    findCurrentItem={props.findCurrentItem}
+                    currentItem={props.currentItem}
+                    findResults={props.findResults}
+                    results={props.results}
                 />
                 <img src={UserImage} alt="" className="image"/>
             </div>
@@ -31,12 +29,15 @@ const AppBar = (props) =>{
 
 const mapStateToProps = ( state ) =>{
     return {
-        suggestions:    state.suggestions
+        suggestions: state.suggestions,
+        currentItem: state.currentItem,
+        results: state.results
     }
 }
 const mapDispatchToProps = { 
     findSuggestions,
-   // findResults
+    findCurrentItem,
+    findResults
 }
 export default connect(mapStateToProps,mapDispatchToProps)(AppBar)
 //withRouter(connect(mapStateToProps)(AppBar)); withRouter es un componente de orden 

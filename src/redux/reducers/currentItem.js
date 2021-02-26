@@ -7,7 +7,7 @@ function reducer(state = defaultState, {type,payload}){
             if(!payload){
                 return [];
             }
-            return items.find(n=>n.id===payload)
+            return items.find(n=>n.id==payload)
         }
         default:
             return state
