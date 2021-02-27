@@ -1,3 +1,13 @@
+# Primer proyecto usando redux
+  Basicamente solo tienes que buscar algun framework o librearia front-end y te dara la descripcion junto con su imagen
+  es desing movile first.
+![desktop](https://user-images.githubusercontent.com/58712435/109394354-f4422780-78fc-11eb-9d68-ef3268d56233.png?raw=true "desktop")
+![table](https://user-images.githubusercontent.com/58712435/109394358-f86e4500-78fc-11eb-948b-45339c6a3f4a.png?raw=true "table")
+![movile 1](https://user-images.githubusercontent.com/58712435/109394362-fd32f900-78fc-11eb-8297-6bde6041294a.png?raw=true "movile 1")
+![movile](https://user-images.githubusercontent.com/58712435/109394367-00c68000-78fd-11eb-933b-876312aab814.png?raw=true "movile")
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
