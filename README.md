@@ -6,7 +6,12 @@
 ![movile 1](https://user-images.githubusercontent.com/58712435/109394362-fd32f900-78fc-11eb-8297-6bde6041294a.png?raw=true "movile 1")
 ![movile](https://user-images.githubusercontent.com/58712435/109394367-00c68000-78fd-11eb-933b-876312aab814.png?raw=true "movile")
 
-
+# Primer paso
+deben clonar este repositorio en su maquina
+# Segundo paso
+deben correr en su terminal npm install o yarn install
+# Tercer paso 
+npm start
 
 # Getting Started with Create React App
 
