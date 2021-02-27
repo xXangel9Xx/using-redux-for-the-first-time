@@ -1,0 +1,35 @@
+@media screen and (min-width:300px){
+    .message-search,.container-results{
+        width: 300px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 0px rgba(63, 63, 68, 0.05), -1px 6px 12px rgba(63, 63, 63, 0.15);
+        border-radius: 5px;
+        margin-top: 20vh;
+        height: max-content;
+        margin-bottom: 25px;
+    }
+    .container-image-title{
+        display: flex;
+        justify-content: space-between;
+    }
+    .image-description{
+        width: 50%;
+        height: 100px;
+    }
+    .text-title{
+        width: 50%;
+        font-size: xx-large;
+    }
+    .description{
+        margin-top: 25px;
+    }
+    .text-description{
+        font-size: 19px;
+    }
+    .text-search-results{
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+}

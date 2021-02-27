@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import './css/index.css'
 import Autocomplete from '../autocomplete/index'
 import UserImage from '../../assets/user.jpeg'
@@ -12,7 +12,7 @@ const AppBar = (props) =>{
     return (
         <div className="container-bar">
             <div className="information">
-                <p className="text">xXangelXx</p>
+                <p className="text">xXangel9Xx</p>
                 <Autocomplete
                     findSuggestions={props.findSuggestions}
                     suggestions={props.suggestions}

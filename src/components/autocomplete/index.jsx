@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React,{useEffect} from 'react';
 import './css/index.css'
 import Search from '../../assets/search.png'
 const Index = (props) =>{
@@ -11,8 +11,8 @@ const Index = (props) =>{
     function select(e,suggestion){
         document.getElementById('input').value = suggestion.title
         props.findCurrentItem(suggestion.id)
-        props.findResults(suggestion)
         props.findSuggestions('')
+        props.findResults(suggestion)        
     }
     function searchFuntionSuggestions(e){props.findSuggestions(e.target.value)};
     return( 
